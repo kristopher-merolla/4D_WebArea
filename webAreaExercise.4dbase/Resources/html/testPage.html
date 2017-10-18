@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript">
+		$4d.today(function(dollarZero)
+			{
+				var curDate = dollarZero;
+				document.getElementById("outputSpace").innerHTML=curDate;
+			});
+
+		$4d.today()
+
+		$4d.calcSum(33, 45, 75, 102.5, 7, function(dollarZero)
+			{
+				var result = dollarZero; // result is 262.5
+				document.getElementById("outputSpace2").innerHTML=result;
+			});
+
+		$4d.calcSum()
+
+		function addTwo(x,y) {
+			var result = x + y;
+			document.getElementById("outputSpace3").innerHTML=result;
+		}
+
+		
+	</script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	Today's date is: <div id="outputSpace"></div>
+	<br>
+	Result of the calcSum is: <div id="outputSpace2"></div>
+	<br>
+	Result of the addTwo is: <div id="outputSpace3"></div>
+</body>
+</html>
